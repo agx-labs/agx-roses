@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>dict-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--缓存的依赖-->
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源api模块-->
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--参数校验模块-->
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api-table-unique</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据库sdk-->
@@ -56,7 +56,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->

@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

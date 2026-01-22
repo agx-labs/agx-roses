@@ -24,28 +24,28 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>kernel-d-tree</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- 多数据源模块，获取数据源上下文 -->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>ds-container-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- 事件模块 -->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>event-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--基础核心业务api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>system-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--字典的api-->
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>dict-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--文件api-->
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据库便捷操作api-->
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源api模块-->
@@ -77,14 +77,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--日志相关api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据库sdk-->
@@ -92,7 +92,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->
@@ -105,20 +105,20 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api-table-unique</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--内存或者redis的缓存-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-memory</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 

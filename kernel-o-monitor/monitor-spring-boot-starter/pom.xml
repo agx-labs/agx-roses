@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>monitor-business-system-info</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

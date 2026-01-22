@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--auth模块的api-->
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>auth-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

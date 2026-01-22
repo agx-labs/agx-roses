@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--格式化用户id展示姓名使用-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>system-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源api模块-->
@@ -39,7 +39,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--参数校验模块-->
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据库sdk-->
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->
@@ -68,13 +68,13 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-memory</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 

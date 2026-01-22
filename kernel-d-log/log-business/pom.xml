@@ -25,14 +25,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>ds-container-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--日志api模块-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源api模块-->
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--auth模块-->
@@ -48,14 +48,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>auth-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据库操作-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- web -->

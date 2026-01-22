@@ -54,7 +54,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <scope>test</scope>
         </dependency>
 

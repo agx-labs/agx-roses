@@ -24,21 +24,21 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-business</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--基于Redis的缓存实现-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--基于内存的配置存储实现-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-sdk-map</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

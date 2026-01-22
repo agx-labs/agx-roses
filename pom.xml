@@ -109,7 +109,7 @@
 
     <properties>
         <!-- 上游基线 -->
-        <roses.kernel.baseline.version>${roses.version}</roses.kernel.baseline.version>
+        <roses.kernel.baseline.version>8.3.5</roses.kernel.baseline.version>
         <!-- 你自己的产品语义版本 -->
         <product.version>AGX.1.0.0</product.version>
         <!-- 构建阶段 -->
@@ -120,7 +120,6 @@
         <java.version>17</java.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <roses.version>8.3.5</roses.version>
         <hutool.version>5.8.29</hutool.version>
         <fastjson.version>2.0.52</fastjson.version>
         <lombok.versin>1.18.34</lombok.versin>
@@ -140,7 +139,7 @@
         <minio.version>8.5.17</minio.version>
         <rocketmq.version>4.5.2</rocketmq.version>
         <easy.captcha>1.6.2</easy.captcha>
-        <groovy.version>3.0.7</groovy.version>
+        <groovy.version>4.0.23</groovy.version>
         <oshi.version>5.7.1</oshi.version>
         <beetl.version>3.3.2.RELEASE</beetl.version>
         <getty.version>1.4.9</getty.version>
@@ -408,4 +407,13 @@
             </resource>
         </resources>
     </build>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
 </project>

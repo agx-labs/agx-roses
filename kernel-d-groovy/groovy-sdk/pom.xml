@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>groovy-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--groovy工具-->
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy</artifactId>
-            <version>${guns.groovy.version}</version>
+            <version>${groovy.version}</version>
         </dependency>
 
     </dependencies>

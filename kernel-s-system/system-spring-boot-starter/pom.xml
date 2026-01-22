@@ -24,34 +24,34 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>system-business-hr</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--应用权限管理模块-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>system-business-permission</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--门户业务-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>system-business-portal</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--缓存配置-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-memory</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 
@@ -61,91 +61,91 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--认证和鉴权模块-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>auth-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--安全模块-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>security-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--数据源连接和dao框架-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--文件管理-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源扫描-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--字典业务-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>dict-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--日志模块-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--定时任务-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>timer-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--wrapper工具-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>wrapper-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--多数据源配置-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>ds-container-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--硬件信息获取-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>monitor-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--点击状态设置-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>stat-spring-boot-starter</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

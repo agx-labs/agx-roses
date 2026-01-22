@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>demo-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--dao相关框架-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

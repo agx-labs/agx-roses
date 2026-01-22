@@ -24,19 +24,19 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--redis缓存配置-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 

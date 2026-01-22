@@ -24,21 +24,21 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>security-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--scanner api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--国密算法-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>security-sdk-guomi</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->

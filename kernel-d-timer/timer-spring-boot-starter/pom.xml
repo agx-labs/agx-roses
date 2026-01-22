@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>timer-business</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--hutool简单定时任务的实现-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>timer-sdk-hutool</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>monitor-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--定时任务的api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>timer-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--硬件信息获取-->
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->

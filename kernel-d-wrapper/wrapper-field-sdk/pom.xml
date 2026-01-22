@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>wrapper-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--字典模块的api-->
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>dict-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--jackson相关基础依赖-->

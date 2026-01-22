@@ -24,27 +24,27 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-business</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--文件sdk的实现，默认用本地存文件-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>file-sdk-local</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--内存或者redis的缓存-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-memory</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>cache-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 

@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>kernel-a-rule</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

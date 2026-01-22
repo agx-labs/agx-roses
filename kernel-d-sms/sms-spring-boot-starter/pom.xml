@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>sms-sdk-aliyun</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- 验证码发送 -->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>sms-business-validation</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

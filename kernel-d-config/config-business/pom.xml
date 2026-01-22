@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>dict-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源api模块-->
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--参数校验模块-->
@@ -41,7 +41,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--系统配置表的缓存，使用redis还是map，Redis用在将系统部署在分布式环境-->
@@ -49,13 +49,13 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-sdk-map</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-sdk-redis</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
             <optional>true</optional>
         </dependency>
 
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>db-sdk-mp</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--web模块-->

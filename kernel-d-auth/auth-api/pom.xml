@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>jwt-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--config模块的api-->
@@ -33,21 +33,21 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>config-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--参数校验的api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>validator-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--资源扫描的api-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--解析需要转化时间-->

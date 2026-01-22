@@ -24,14 +24,14 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>scanner-api</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--jwt模块，汇报资源需要生成token用-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>jwt-sdk</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--spring-web-->

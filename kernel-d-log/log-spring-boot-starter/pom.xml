@@ -24,28 +24,28 @@
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-business</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--安全日志-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-business-security</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--接口请求日志记录-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-business-requestapi</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!--登录日志的业务-->
         <dependency>
             <groupId>com.javaguns.roses</groupId>
             <artifactId>log-business-login-log</artifactId>
-            <version>${roses.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>
