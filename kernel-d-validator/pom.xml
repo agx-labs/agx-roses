@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>roses-kernel</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>kernel-d-validator</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>kernel-d-validator</name>
+    <description>数据校验模块</description>
+
+    <modules>
+        <module>validator-api</module>
+        <module>validator-api-table-unique</module>
+        <module>validator-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+
+        <!-- 开发规则 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>kernel-a-rule</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

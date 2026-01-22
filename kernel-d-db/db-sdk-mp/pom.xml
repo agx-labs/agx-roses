@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-db</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>db-sdk-mp</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>db-sdk-mp</name>
+    <description>对Mybatis-Plus的封装和装配</description>
+
+    <dependencies>
+
+        <!--db操作的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--auth鉴权模块的api-->
+        <!--需要用auth模块的LoginContext获取当前登录用户，然后填充到create_user这类字段里-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>auth-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!-- aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

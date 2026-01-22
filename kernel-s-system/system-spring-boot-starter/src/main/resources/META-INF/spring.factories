@@ -1,0 +1,16 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.stylefeng.roses.kernel.sys.starter.config.RestErrorViewAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.theme.ThemeMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.theme.ThemeRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.resource.ResourceMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.resource.ResourceRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.org.OrgMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.org.OrgRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.user.UserMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.user.UserRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.role.RoleMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.role.RoleRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.menu.MenuCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.menu.MenuRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.position.PositionMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.sys.starter.cache.position.PositionRedisCacheAutoConfiguration

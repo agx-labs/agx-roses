@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-groovy</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>groovy-sdk</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>groovy-sdk</name>
+    <description>动态脚本的核心实现</description>
+
+    <dependencies>
+
+        <!--groovy的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>groovy-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--groovy工具-->
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>${guns.groovy.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

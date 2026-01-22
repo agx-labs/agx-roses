@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-s-system</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>system-business-portal</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>system-business-portal</name>
+    <description>门户管理基础模块</description>
+
+    <dependencies>
+
+        <!-- 数据源容器 -->
+        <!-- 用来获取当前的数据源的类型 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>ds-container-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--基础核心业务api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>system-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--日志api-->
+        <!--用在获取首页的个人用户操作日志列表-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--包装器模块-->
+        <!--包装结果-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>wrapper-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--字典模块-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>dict-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--文件管理-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>file-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--缓存api-->
+        <!--默认主题查询到会缓存-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-memory</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!--资源api模块-->
+        <!--用在资源控制器，资源扫描上-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库sdk-->
+        <!--数据库dao框架-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-sdk-mp</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--web模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

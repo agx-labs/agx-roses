@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-s-dict</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>dict-city-business</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>dict-city-business</name>
+    <description>城市的业务实现</description>
+
+    <dependencies>
+
+        <!--字典模块api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>dict-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--缓存的依赖-->
+        <!--字典缓存的使用-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--资源api模块-->
+        <!--用在资源控制器，资源扫描上-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--参数校验模块-->
+        <!--用在控制器，参数校验-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api-table-unique</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库sdk-->
+        <!--数据库dao框架-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-sdk-mp</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--web模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

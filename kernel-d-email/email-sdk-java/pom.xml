@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-email</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>email-sdk-java</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>email-sdk-java</name>
+    <description>邮件发送的java原生的实现</description>
+
+    <dependencies>
+
+        <!--java邮件发送api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>email-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--java邮件发送-->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${java.mail.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

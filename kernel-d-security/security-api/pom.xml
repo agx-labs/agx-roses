@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-security</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>security-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>security-api</name>
+    <description>安全管理模块的API</description>
+
+    <dependencies>
+
+        <!--config模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--资源api模块-->
+        <!--用在资源控制器，资源扫描上-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

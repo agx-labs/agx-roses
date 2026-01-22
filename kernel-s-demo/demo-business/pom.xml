@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-s-demo</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>demo-business</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>demo-business</name>
+    <description>系统演示环境的实现</description>
+
+    <dependencies>
+
+        <!--demo模块的的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>demo-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--dao相关框架-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-sdk-mp</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

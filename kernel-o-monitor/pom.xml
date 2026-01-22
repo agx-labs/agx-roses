@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>roses-kernel</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>kernel-o-monitor</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>kernel-o-monitor</name>
+    <description>系统监控模块</description>
+
+    <modules>
+        <module>monitor-api</module>
+        <module>monitor-business-system-info</module>
+        <module>monitor-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+
+        <!-- 开发规则 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>kernel-a-rule</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

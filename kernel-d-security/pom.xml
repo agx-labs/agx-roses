@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>roses-kernel</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>kernel-d-security</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>kernel-d-security</name>
+    <description>安全管理模块</description>
+
+    <modules>
+        <module>security-api</module>
+        <module>security-sdk-allow-cors</module>
+        <module>security-sdk-black-white</module>
+        <module>security-sdk-captcha</module>
+        <module>security-sdk-clear-threadlocal</module>
+        <module>security-sdk-count</module>
+        <module>security-sdk-guomi</module>
+        <module>security-sdk-request-encrypt-and-decode</module>
+        <module>security-sdk-xss</module>
+        <module>security-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+
+        <!-- 开发规则 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>kernel-a-rule</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

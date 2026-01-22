@@ -1,0 +1,2 @@
+ALTER TABLE `sys_user` MODIFY COLUMN `status_flag` tinyint NOT NULL DEFAULT 1 COMMENT '状态：1-正常，2-冻结，3-临时冻结' AFTER `super_admin_flag`,
+ADD COLUMN `freeze_deadline_time` datetime NULL COMMENT '账号冻结截止时间，如果是临时冻结，这个值需要填写' AFTER `status_flag`;

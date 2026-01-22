@@ -1,0 +1,3 @@
+UPDATE `sys_config` SET `config_name` = 'sso会话校验，redis的密码', `config_code` = 'SYS_AUTH_SSO_SESSION_VALIDATE_REDIS_PASSWORD', `config_value` = '123456', `sys_flag` = 'Y', `remark` = NULL, `status_flag` = 1, `group_code` = 'ca_config', `del_flag` = 'N', `create_time` = NULL, `create_user` = NULL, `update_time` = NULL, `update_user` = NULL WHERE `config_id` = 1402549781675610230;
+
+ALTER TABLE `sys_theme` MODIFY COLUMN `template_id` bigint NOT NULL COMMENT '主题模板id' AFTER `theme_value`;

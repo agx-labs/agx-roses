@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-auth</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>auth-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>auth-api</name>
+    <description>认证模块的API接口</description>
+
+    <dependencies>
+
+        <!--jwt模块的api-->
+        <!--AuthServiceApi解析token的结果需要用到jwt模块-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>jwt-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--config模块的api-->
+        <!--权限相关的配置要放到容器里-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--参数校验的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--资源扫描的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--解析需要转化时间-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+        <!--web-->
+        <!--LoginUserRemoteApi会用到web，用在提供feign接口时-->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
+</project>

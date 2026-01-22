@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.stylefeng.roses.kernel.sys.modular.message.mapper.SysMessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.roses.kernel.sys.modular.message.entity.SysMessage">
+		<id column="message_id" property="messageId" />
+		<result column="receive_user_id" property="receiveUserId" />
+		<result column="send_user_id" property="sendUserId" />
+		<result column="message_title" property="messageTitle" />
+		<result column="message_content" property="messageContent" />
+		<result column="message_type" property="messageType" />
+		<result column="message_url" property="messageUrl" />
+		<result column="priority_level" property="priorityLevel" />
+		<result column="message_send_time" property="messageSendTime" />
+		<result column="business_id" property="businessId" />
+		<result column="business_type" property="businessType" />
+		<result column="read_flag" property="readFlag" />
+		<result column="version_flag" property="versionFlag" />
+		<result column="del_flag" property="delFlag" />
+		<result column="create_user" property="createUser" />
+		<result column="create_time" property="createTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="tenant_id" property="tenantId" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		message_id,receive_user_id,send_user_id,message_title,message_content,message_type,message_url,priority_level,message_send_time,business_id,business_type,read_flag,version_flag,del_flag,create_user,create_time,update_user,update_time,tenant_id
+	</sql>
+
+    <resultMap id="customResultMap" type="cn.stylefeng.roses.kernel.sys.modular.message.pojo.response.SysMessageVo" extends="BaseResultMap">
+    </resultMap>
+
+	<select id="customFindList" resultMap="customResultMap">
+		SELECT
+		*
+        FROM
+		sys_message tbl
+		WHERE
+		<where>
+        <if test="param.messageId != null and param.messageId != ''">
+            and tbl.message_id like concat('%',#{param.messageId},'%')
+        </if>
+        <if test="param.receiveUserId != null and param.receiveUserId != ''">
+            and tbl.receive_user_id like concat('%',#{param.receiveUserId},'%')
+        </if>
+        <if test="param.sendUserId != null and param.sendUserId != ''">
+            and tbl.send_user_id like concat('%',#{param.sendUserId},'%')
+        </if>
+        <if test="param.messageTitle != null and param.messageTitle != ''">
+            and tbl.message_title like concat('%',#{param.messageTitle},'%')
+        </if>
+        <if test="param.messageContent != null and param.messageContent != ''">
+            and tbl.message_content like concat('%',#{param.messageContent},'%')
+        </if>
+        <if test="param.messageType != null and param.messageType != ''">
+            and tbl.message_type like concat('%',#{param.messageType},'%')
+        </if>
+        <if test="param.messageUrl != null and param.messageUrl != ''">
+            and tbl.message_url like concat('%',#{param.messageUrl},'%')
+        </if>
+        <if test="param.priorityLevel != null and param.priorityLevel != ''">
+            and tbl.priority_level like concat('%',#{param.priorityLevel},'%')
+        </if>
+        <if test="param.messageSendTime != null and param.messageSendTime != ''">
+            and tbl.message_send_time like concat('%',#{param.messageSendTime},'%')
+        </if>
+        <if test="param.businessId != null and param.businessId != ''">
+            and tbl.business_id like concat('%',#{param.businessId},'%')
+        </if>
+        <if test="param.businessType != null and param.businessType != ''">
+            and tbl.business_type like concat('%',#{param.businessType},'%')
+        </if>
+        <if test="param.readFlag != null and param.readFlag != ''">
+            and tbl.read_flag like concat('%',#{param.readFlag},'%')
+        </if>
+        <if test="param.versionFlag != null and param.versionFlag != ''">
+            and tbl.version_flag like concat('%',#{param.versionFlag},'%')
+        </if>
+        <if test="param.delFlag != null and param.delFlag != ''">
+            and tbl.del_flag like concat('%',#{param.delFlag},'%')
+        </if>
+        <if test="param.createUser != null and param.createUser != ''">
+            and tbl.create_user like concat('%',#{param.createUser},'%')
+        </if>
+        <if test="param.createTime != null and param.createTime != ''">
+            and tbl.create_time like concat('%',#{param.createTime},'%')
+        </if>
+        <if test="param.updateUser != null and param.updateUser != ''">
+            and tbl.update_user like concat('%',#{param.updateUser},'%')
+        </if>
+        <if test="param.updateTime != null and param.updateTime != ''">
+            and tbl.update_time like concat('%',#{param.updateTime},'%')
+        </if>
+        <if test="param.tenantId != null and param.tenantId != ''">
+            and tbl.tenant_id like concat('%',#{param.tenantId},'%')
+        </if>
+		</where>
+	</select>
+
+</mapper>

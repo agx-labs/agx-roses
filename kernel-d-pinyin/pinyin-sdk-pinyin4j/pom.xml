@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-pinyin</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>pinyin-sdk-pinyin4j</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>pinyin-sdk-pinyin4j</name>
+    <description>拼音工具的实现</description>
+
+    <dependencies>
+
+        <!--拼音工具类api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>pinyin-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--拼音工具类-->
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>${pinyin4j.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

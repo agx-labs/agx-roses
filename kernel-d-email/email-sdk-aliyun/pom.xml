@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-email</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>email-sdk-aliyun</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>email-sdk-aliyun</name>
+    <description>邮件发送的aliyun的实现</description>
+
+    <dependencies>
+
+        <!--java邮件发送api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>email-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--阿里云邮件发送的sdk-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>${aliyun.java.sdk.core}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-dm</artifactId>
+            <version>${aliyun.java.sdk.dm}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

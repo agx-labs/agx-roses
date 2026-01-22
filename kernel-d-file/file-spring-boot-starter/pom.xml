@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-file</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>file-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>file-spring-boot-starter</name>
+    <description>文件存储的自动装配</description>
+
+    <dependencies>
+
+        <!--文件的在线管理-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>file-business</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--文件sdk的实现，默认用本地存文件-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>file-sdk-local</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--内存或者redis的缓存-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-memory</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+</project>

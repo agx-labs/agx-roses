@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-ds-container</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ds-container-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>ds-container-api</name>
+    <description>多数据源容器API</description>
+
+    <dependencies>
+
+        <!--校验模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--参数校验模块-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api-table-unique</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

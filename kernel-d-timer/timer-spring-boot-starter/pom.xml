@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-timer</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>timer-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>timer-spring-boot-starter</name>
+    <description>定时任务的自动装配</description>
+
+    <dependencies>
+
+        <!--定时任务管理-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>timer-business</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--hutool简单定时任务的实现-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>timer-sdk-hutool</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

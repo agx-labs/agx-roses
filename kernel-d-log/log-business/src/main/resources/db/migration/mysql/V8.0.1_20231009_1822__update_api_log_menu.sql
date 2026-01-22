@@ -1,0 +1,1 @@
+UPDATE `sys_menu` SET `menu_name` = 'API日志' WHERE `menu_id` = 1673525798674657282

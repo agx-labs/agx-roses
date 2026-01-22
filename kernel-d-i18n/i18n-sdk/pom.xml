@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-i18n</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>i18n-sdk</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>i18n-sdk</name>
+    <description>多语言模块的核心</description>
+
+    <dependencies>
+
+        <!--多语言的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>i18n-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--auth鉴权模块的api-->
+        <!--QuickTranslateUtil需要获取当前用户的多语`言类型属性-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>auth-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-s-system</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>system-business-hr</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>system-business-hr</name>
+    <description>人员机构管理业务</description>
+
+    <dependencies>
+
+        <!--树操作的sdk-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>kernel-d-tree</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!-- 多数据源模块，获取数据源上下文 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>ds-container-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!-- 事件模块 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>event-spring-boot-starter</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--基础核心业务api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>system-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--字典的api-->
+        <!--获取审批人类型查询-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>dict-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--文件api-->
+        <!--用户头像相关的操作-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>file-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库便捷操作api-->
+        <!--查询组织机构的子公司的子公司-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--资源api模块-->
+        <!--用在资源控制器，资源扫描上-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--日志相关api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库sdk-->
+        <!--数据库dao框架-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-sdk-mp</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--web模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--参数校验模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api-table-unique</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--内存或者redis的缓存-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-memory</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+</project>

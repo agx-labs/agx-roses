@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.stylefeng.roses.kernel.security.starter.ProjectSecurityAutoConfiguration,\
+  cn.stylefeng.roses.kernel.security.starter.CounterAutoConfiguration,\
+  cn.stylefeng.roses.kernel.security.starter.CaptchaAutoConfiguration,\
+  cn.stylefeng.roses.kernel.security.starter.cache.SecurityMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.security.starter.cache.SecurityRedisCacheAutoConfiguration

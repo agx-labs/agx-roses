@@ -1,0 +1,1 @@
+INSERT INTO `sys_menu_options`(`menu_option_id`, `app_id`, `menu_id`, `option_name`, `option_code`, `create_time`, `create_user`, `update_time`, `update_user`) VALUES (1711189530448498690, 1671406745336016898, 1671408081100206081, '修改权限的权限范围', 'CHANGE_ROLE_BIND_LIMIT', '2023-10-09 09:19:11', 1339550467939639299, NULL, NULL);

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-security</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>security-sdk-guomi</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>security-sdk-guomi</name>
+    <description>国密算法的SDK</description>
+
+    <dependencies>
+
+        <!--国密算法的支持-->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15to18</artifactId>
+            <version>${bcprov.version}</version>
+        </dependency>
+
+        <!--config-api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>

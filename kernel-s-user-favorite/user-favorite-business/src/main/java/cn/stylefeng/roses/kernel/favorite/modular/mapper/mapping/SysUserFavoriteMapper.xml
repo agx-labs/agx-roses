@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.stylefeng.roses.kernel.favorite.modular.mapper.SysUserFavoriteMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.roses.kernel.favorite.modular.entity.SysUserFavorite">
+		<id column="favorite_id" property="favoriteId" />
+		<result column="fav_type" property="favType" />
+		<result column="user_id" property="userId" />
+		<result column="business_id" property="businessId" />
+		<result column="fav_time" property="favTime" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		favorite_id,fav_type,user_id,business_id,fav_time,create_time,create_user,update_time,update_user
+	</sql>
+
+    <resultMap id="customResultMap" type="cn.stylefeng.roses.kernel.favorite.modular.pojo.response.SysUserFavoriteVo" extends="BaseResultMap">
+    </resultMap>
+
+	<select id="customFindList" resultMap="customResultMap">
+		SELECT
+		*
+        FROM
+		sys_user_favorite tbl
+		WHERE
+		<where>
+        <if test="param.favoriteId != null and param.favoriteId != ''">
+            and tbl.favorite_id like concat('%',#{param.favoriteId},'%')
+        </if>
+        <if test="param.favType != null and param.favType != ''">
+            and tbl.fav_type like concat('%',#{param.favType},'%')
+        </if>
+        <if test="param.userId != null and param.userId != ''">
+            and tbl.user_id like concat('%',#{param.userId},'%')
+        </if>
+        <if test="param.businessId != null and param.businessId != ''">
+            and tbl.business_id like concat('%',#{param.businessId},'%')
+        </if>
+        <if test="param.favTime != null and param.favTime != ''">
+            and tbl.fav_time like concat('%',#{param.favTime},'%')
+        </if>
+        <if test="param.createTime != null and param.createTime != ''">
+            and tbl.create_time like concat('%',#{param.createTime},'%')
+        </if>
+        <if test="param.createUser != null and param.createUser != ''">
+            and tbl.create_user like concat('%',#{param.createUser},'%')
+        </if>
+        <if test="param.updateTime != null and param.updateTime != ''">
+            and tbl.update_time like concat('%',#{param.updateTime},'%')
+        </if>
+        <if test="param.updateUser != null and param.updateUser != ''">
+            and tbl.update_user like concat('%',#{param.updateUser},'%')
+        </if>
+		</where>
+	</select>
+
+</mapper>

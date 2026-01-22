@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.stylefeng.roses.kernel.auth.starter.AuthAutoConfiguration,\
+  cn.stylefeng.roses.kernel.auth.starter.cache.AuthTokenMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.auth.starter.cache.AuthTokenRedisCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.auth.starter.PasswordRsaPropAutoConfiguration

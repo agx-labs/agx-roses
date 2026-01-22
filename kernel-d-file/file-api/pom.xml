@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-file</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>file-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>file-api</name>
+    <description>文件管理API</description>
+
+    <dependencies>
+
+        <!--参数校验模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--config模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--servlet-->
+        <!--文件下载工具类会用到-->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

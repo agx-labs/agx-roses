@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-db</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>db-sdk-flyway</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>db-sdk-flyway</name>
+    <description>数据库操作flyway集成</description>
+
+    <dependencies>
+
+        <!--db操作的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库版本管理-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

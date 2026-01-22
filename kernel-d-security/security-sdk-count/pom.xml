@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-security</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>security-sdk-count</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>security-sdk-count</name>
+    <description>计数器模块</description>
+
+    <dependencies>
+
+        <!--安全模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>security-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--缓存模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-memory</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!--web模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-file</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>file-sdk-local</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>file-sdk-local</name>
+    <description>本地化文件存储的实现</description>
+
+    <dependencies>
+
+        <!--file模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>file-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--auth模块的api-->
+        <!--用来获取当前登录用户的token，生成file的url-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>auth-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

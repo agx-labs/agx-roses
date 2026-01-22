@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-wrapper</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>wrapper-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>wrapper-spring-boot-starter</name>
+    <description>数据包装的自动配置</description>
+
+    <dependencies>
+
+        <!--wrapper的sdk-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>wrapper-sdk</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--对字段的包装和转化-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>wrapper-field-sdk</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

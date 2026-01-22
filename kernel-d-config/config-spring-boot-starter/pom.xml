@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-config</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>config-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>config-spring-boot-starter</name>
+    <description>系统配置的自动装配</description>
+
+    <dependencies>
+
+        <!--config包含的业务模块-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-business</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--基于Redis的缓存实现-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--基于内存的配置存储实现-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-sdk-map</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

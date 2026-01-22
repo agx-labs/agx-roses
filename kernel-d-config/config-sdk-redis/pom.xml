@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-config</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>config-sdk-redis</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>config-sdk-redis</name>
+    <description>redis方式实现的系统配置缓存</description>
+
+    <dependencies>
+
+        <!--config模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--redis缓存配置-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+</project>

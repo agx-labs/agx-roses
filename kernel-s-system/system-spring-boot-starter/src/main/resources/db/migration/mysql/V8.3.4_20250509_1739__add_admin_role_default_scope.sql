@@ -1,0 +1,2 @@
+DELETE FROM `sys_role_data_scope` WHERE `role_id` = 1671420545250439170 AND `data_scope_type` = 50;
+INSERT INTO `sys_role_data_scope` (`role_data_scope_id`, `role_id`, `data_scope_type`, `org_level_code`, `define_org_list`, `define_org_id`, `create_time`, `create_user`, `update_time`, `update_user`) VALUES (1920774896534970369, 1671420545250439170, 50, NULL, NULL, NULL, '2025-05-09 17:36:36', 1339550467939639299, NULL, NULL);

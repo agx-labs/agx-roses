@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.stylefeng.roses.kernel.sys.modular.org.mapper.OrganizationLevelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.roses.kernel.sys.api.entity.OrganizationLevel">
+		<id column="org_level_id" property="orgLevelId" />
+		<result column="level_number" property="levelNumber" />
+		<result column="level_name" property="levelName" />
+		<result column="level_code" property="levelCode" />
+		<result column="level_color" property="levelColor" />
+		<result column="del_flag" property="delFlag" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="tenant_id" property="tenantId" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		org_level_id,level_number,level_name,level_code,level_color,del_flag,create_time,create_user,update_time,update_user,tenant_id
+	</sql>
+
+    <resultMap id="customResultMap" type="cn.stylefeng.roses.kernel.sys.modular.org.pojo.response.OrganizationLevelVo" extends="BaseResultMap">
+    </resultMap>
+
+	<select id="customFindList" resultMap="customResultMap">
+		SELECT
+		*
+        FROM
+		sys_hr_organization_level tbl
+		WHERE
+		<where>
+        <if test="param.orgLevelId != null and param.orgLevelId != ''">
+            and tbl.org_level_id like concat('%',#{param.orgLevelId},'%')
+        </if>
+        <if test="param.levelNumber != null and param.levelNumber != ''">
+            and tbl.level_number like concat('%',#{param.levelNumber},'%')
+        </if>
+        <if test="param.levelName != null and param.levelName != ''">
+            and tbl.level_name like concat('%',#{param.levelName},'%')
+        </if>
+        <if test="param.levelCode != null and param.levelCode != ''">
+            and tbl.level_code like concat('%',#{param.levelCode},'%')
+        </if>
+        <if test="param.levelColor != null and param.levelColor != ''">
+            and tbl.level_color like concat('%',#{param.levelColor},'%')
+        </if>
+        <if test="param.delFlag != null and param.delFlag != ''">
+            and tbl.del_flag like concat('%',#{param.delFlag},'%')
+        </if>
+        <if test="param.createTime != null and param.createTime != ''">
+            and tbl.create_time like concat('%',#{param.createTime},'%')
+        </if>
+        <if test="param.createUser != null and param.createUser != ''">
+            and tbl.create_user like concat('%',#{param.createUser},'%')
+        </if>
+        <if test="param.updateTime != null and param.updateTime != ''">
+            and tbl.update_time like concat('%',#{param.updateTime},'%')
+        </if>
+        <if test="param.updateUser != null and param.updateUser != ''">
+            and tbl.update_user like concat('%',#{param.updateUser},'%')
+        </if>
+        <if test="param.tenantId != null and param.tenantId != ''">
+            and tbl.tenant_id like concat('%',#{param.tenantId},'%')
+        </if>
+		</where>
+	</select>
+
+</mapper>

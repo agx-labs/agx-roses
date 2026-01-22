@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-scanner</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>scanner-sdk-scanner</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>scanner-sdk-scanner</name>
+    <description>资源扫描的实现</description>
+
+    <dependencies>
+
+        <!--资源模块的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--jwt模块，汇报资源需要生成token用-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>jwt-sdk</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--spring-web-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-ds-container</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ds-container-sdk</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>ds-container-sdk</name>
+    <description>多数据源容器的核心实现</description>
+
+    <dependencies>
+
+        <!--多数据源操作的api-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>ds-container-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库操作模块的api-->
+        <!--需要用到db模块的基础类，例如DruidProperties，DruidDatasource之类-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>db-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!-- aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

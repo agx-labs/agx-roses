@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.stylefeng.roses.kernel.log.security.mapper.LogSecurityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.roses.kernel.log.security.entity.LogSecurity">
+		<id column="security_log_id" property="securityLogId" />
+		<result column="request_url" property="requestUrl" />
+		<result column="request_params" property="requestParams" />
+		<result column="server_ip" property="serverIp" />
+		<result column="client_ip" property="clientIp" />
+		<result column="http_method" property="httpMethod" />
+		<result column="client_browser" property="clientBrowser" />
+		<result column="client_os" property="clientOs" />
+		<result column="log_content" property="logContent" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		security_log_id,request_url,request_params,server_ip,client_ip,http_method,client_browser,client_os,log_content,create_time,create_user,update_time,update_user
+	</sql>
+
+    <resultMap id="customResultMap" type="cn.stylefeng.roses.kernel.log.security.pojo.response.LogSecurityVo" extends="BaseResultMap">
+    </resultMap>
+
+	<select id="customFindList" resultMap="customResultMap">
+		SELECT
+		*
+        FROM
+		sys_log_security tbl
+		WHERE
+		<where>
+        <if test="param.securityLogId != null and param.securityLogId != ''">
+            and tbl.security_log_id like concat('%',#{param.securityLogId},'%')
+        </if>
+        <if test="param.requestUrl != null and param.requestUrl != ''">
+            and tbl.request_url like concat('%',#{param.requestUrl},'%')
+        </if>
+        <if test="param.requestParams != null and param.requestParams != ''">
+            and tbl.request_params like concat('%',#{param.requestParams},'%')
+        </if>
+        <if test="param.serverIp != null and param.serverIp != ''">
+            and tbl.server_ip like concat('%',#{param.serverIp},'%')
+        </if>
+        <if test="param.clientIp != null and param.clientIp != ''">
+            and tbl.client_ip like concat('%',#{param.clientIp},'%')
+        </if>
+        <if test="param.httpMethod != null and param.httpMethod != ''">
+            and tbl.http_method like concat('%',#{param.httpMethod},'%')
+        </if>
+        <if test="param.clientBrowser != null and param.clientBrowser != ''">
+            and tbl.client_browser like concat('%',#{param.clientBrowser},'%')
+        </if>
+        <if test="param.clientOs != null and param.clientOs != ''">
+            and tbl.client_os like concat('%',#{param.clientOs},'%')
+        </if>
+        <if test="param.logContent != null and param.logContent != ''">
+            and tbl.log_content like concat('%',#{param.logContent},'%')
+        </if>
+        <if test="param.createTime != null and param.createTime != ''">
+            and tbl.create_time like concat('%',#{param.createTime},'%')
+        </if>
+        <if test="param.createUser != null and param.createUser != ''">
+            and tbl.create_user like concat('%',#{param.createUser},'%')
+        </if>
+        <if test="param.updateTime != null and param.updateTime != ''">
+            and tbl.update_time like concat('%',#{param.updateTime},'%')
+        </if>
+        <if test="param.updateUser != null and param.updateUser != ''">
+            and tbl.update_user like concat('%',#{param.updateUser},'%')
+        </if>
+		</where>
+	</select>
+
+</mapper>

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.stylefeng.roses.kernel.dict.starter.DictMemoryCacheAutoConfiguration,\
+  cn.stylefeng.roses.kernel.dict.starter.DictRedisCacheAutoConfiguration

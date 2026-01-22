@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>roses-kernel</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>kernel-d-i18n</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>kernel-d-i18n</name>
+    <description>多语言模块</description>
+
+    <modules>
+        <module>i18n-api</module>
+        <module>i18n-business</module>
+        <module>i18n-sdk</module>
+        <module>i18n-spring-boot-starter</module>
+    </modules>
+
+    <dependencies>
+
+        <!-- 开发规则 -->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>kernel-a-rule</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

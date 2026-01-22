@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-db</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>db-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>db-api</name>
+    <description>数据库操作的API</description>
+
+    <dependencies>
+
+        <!--config模块的api-->
+        <!--数据源配置Expander要放到容器里-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!-- mybatis-plus dao框架 -->
+        <!-- 基础实体，分页参数和结果的创建，需要用到mp的注解和类 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+        </dependency>
+
+        <!-- servlet库 -->
+        <!-- PageFactory类会从http请求获取分页参数 -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
+
+        <!--数据库连接池，项目默认采用druid，用别的连接池可以排除这个包-->
+        <!--druid数据源的创建，需要用到本包-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

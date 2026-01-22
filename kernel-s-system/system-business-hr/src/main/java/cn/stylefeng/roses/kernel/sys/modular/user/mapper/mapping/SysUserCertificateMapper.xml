@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.stylefeng.roses.kernel.sys.modular.user.mapper.SysUserCertificateMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.roses.kernel.sys.modular.user.entity.SysUserCertificate">
+		<id column="user_certificate_id" property="userCertificateId" />
+		<result column="user_id" property="userId" />
+		<result column="certificate_type" property="certificateType" />
+		<result column="certificate_no" property="certificateNo" />
+		<result column="issuing_authority" property="issuingAuthority" />
+		<result column="date_issued" property="dateIssued" />
+		<result column="date_expires" property="dateExpires" />
+		<result column="create_time" property="createTime" />
+		<result column="create_user" property="createUser" />
+		<result column="update_time" property="updateTime" />
+		<result column="update_user" property="updateUser" />
+		<result column="del_flag" property="delFlag" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		user_certificate_id,user_id,certificate_type,certificate_no,issuing_authority,date_issued,date_expires,create_time,create_user,update_time,update_user,del_flag
+	</sql>
+
+    <resultMap id="customResultMap" type="cn.stylefeng.roses.kernel.sys.modular.user.pojo.response.SysUserCertificateVo" extends="BaseResultMap">
+    </resultMap>
+
+	<select id="customFindList" resultMap="customResultMap">
+		SELECT
+		*
+        FROM
+		sys_user_certificate tbl
+		WHERE
+		<where>
+        <if test="param.userCertificateId != null and param.userCertificateId != ''">
+            and tbl.user_certificate_id like concat('%',#{param.userCertificateId},'%')
+        </if>
+        <if test="param.userId != null and param.userId != ''">
+            and tbl.user_id like concat('%',#{param.userId},'%')
+        </if>
+        <if test="param.certificateType != null and param.certificateType != ''">
+            and tbl.certificate_type like concat('%',#{param.certificateType},'%')
+        </if>
+        <if test="param.certificateNo != null and param.certificateNo != ''">
+            and tbl.certificate_no like concat('%',#{param.certificateNo},'%')
+        </if>
+        <if test="param.issuingAuthority != null and param.issuingAuthority != ''">
+            and tbl.issuing_authority like concat('%',#{param.issuingAuthority},'%')
+        </if>
+        <if test="param.dateIssued != null and param.dateIssued != ''">
+            and tbl.date_issued like concat('%',#{param.dateIssued},'%')
+        </if>
+        <if test="param.dateExpires != null and param.dateExpires != ''">
+            and tbl.date_expires like concat('%',#{param.dateExpires},'%')
+        </if>
+        <if test="param.createTime != null and param.createTime != ''">
+            and tbl.create_time like concat('%',#{param.createTime},'%')
+        </if>
+        <if test="param.createUser != null and param.createUser != ''">
+            and tbl.create_user like concat('%',#{param.createUser},'%')
+        </if>
+        <if test="param.updateTime != null and param.updateTime != ''">
+            and tbl.update_time like concat('%',#{param.updateTime},'%')
+        </if>
+        <if test="param.updateUser != null and param.updateUser != ''">
+            and tbl.update_user like concat('%',#{param.updateUser},'%')
+        </if>
+        <if test="param.delFlag != null and param.delFlag != ''">
+            and tbl.del_flag like concat('%',#{param.delFlag},'%')
+        </if>
+		</where>
+	</select>
+
+</mapper>

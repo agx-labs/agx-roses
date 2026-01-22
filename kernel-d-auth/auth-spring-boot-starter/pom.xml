@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-auth</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>auth-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>auth-spring-boot-starter</name>
+    <description>认证模块的自动配置</description>
+
+    <dependencies>
+
+        <!--auth本模块的sdk-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>auth-sdk</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--jwt的sdk-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>jwt-sdk</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--参数校验-自动装配-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>validator-spring-boot-starter</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--缓存配置-->
+        <!--在项目中进行配置是开启内存还是Redis缓存-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-memory</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>cache-sdk-redis</artifactId>
+            <version>${roses.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!--properties自动提示装载-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
+</project>

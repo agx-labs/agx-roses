@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.stylefeng.roses.kernel.timer.starter.TimerAutoConfiguration
+org.springframework.context.ApplicationListener=\
+  cn.stylefeng.roses.kernel.timer.modular.listener.TaskRunListener

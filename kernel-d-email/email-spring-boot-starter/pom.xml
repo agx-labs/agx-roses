@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-email</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>email-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>email-spring-boot-starter</name>
+    <description>邮件发送的自动化装配</description>
+
+    <dependencies>
+
+        <!--邮件发送的客户端，默认java实现-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>email-sdk-java</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

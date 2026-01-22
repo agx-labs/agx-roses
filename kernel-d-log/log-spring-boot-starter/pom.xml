@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.javaguns.roses</groupId>
+        <artifactId>kernel-d-log</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>log-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>log-spring-boot-starter</name>
+    <description>日志模块的自动配置</description>
+
+    <dependencies>
+
+        <!--业务日志记录-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-business</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--安全日志-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-business-security</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--接口请求日志记录-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-business-requestapi</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--登录日志的业务-->
+        <dependency>
+            <groupId>com.javaguns.roses</groupId>
+            <artifactId>log-business-login-log</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
