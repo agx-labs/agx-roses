@@ -111,11 +111,11 @@
         <!-- 上游基线 -->
         <roses.kernel.baseline.version>8.3.5</roses.kernel.baseline.version>
         <!-- 你自己的产品语义版本 -->
-        <product.version>v1.0.0</product.version>
+        <product.version>1.0.0</product.version>
         <!-- 构建阶段 -->
         <build.version>SNAPSHOT</build.version>
         <!-- 统一版本 -->
-        <revision>baseline-${roses.kernel.baseline.version}-${product.version}-${build.version}</revision>
+        <revision>${roses.kernel.baseline.version}-agx-${product.version}-${build.version}</revision>
 
         <java.version>17</java.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
