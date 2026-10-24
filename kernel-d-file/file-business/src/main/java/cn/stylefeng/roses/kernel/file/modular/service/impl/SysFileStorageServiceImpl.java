@@ -6,7 +6,6 @@ import cn.stylefeng.roses.kernel.file.api.expander.FileConfigExpander;
 import cn.stylefeng.roses.kernel.file.modular.entity.SysFileStorage;
 import cn.stylefeng.roses.kernel.file.modular.mapper.SysFileStorageMapper;
 import cn.stylefeng.roses.kernel.file.modular.service.SysFileStorageService;
-import cn.stylefeng.roses.kernel.rule.util.HttpServletUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -32,15 +31,16 @@ public class SysFileStorageServiceImpl extends ServiceImpl<SysFileStorageMapper,
         // 获取登录用户的token
         String token = LoginContext.me().getToken();
         // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-        return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PRIVATE_PREVIEW_URL + "?fileId=" + fileId + "&token=" + token;
+        //String contextPath = HttpServletUtil.getRequest().getContextPath();
+        //return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PRIVATE_PREVIEW_URL + "?fileId=" + fileId + "&token=" + token;
+        return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PRIVATE_PREVIEW_URL + "?fileId=" + fileId + "&token=" + token;
     }
 
     @Override
     public String getFileUnAuthUrl(String fileId) {
         // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-        return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PUBLIC_PREVIEW_URL + "?fileId=" + fileId;
+        //String contextPath = HttpServletUtil.getRequest().getContextPath();
+        return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PUBLIC_PREVIEW_URL + "?fileId=" + fileId;
     }
 
 }
