@@ -30,16 +30,11 @@ public class SysFileStorageServiceImpl extends ServiceImpl<SysFileStorageMapper,
     public String getFileAuthUrl(String fileId) {
         // 获取登录用户的token
         String token = LoginContext.me().getToken();
-        // 获取context-path
-        //String contextPath = HttpServletUtil.getRequest().getContextPath();
-        //return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PRIVATE_PREVIEW_URL + "?fileId=" + fileId + "&token=" + token;
         return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PRIVATE_PREVIEW_URL + "?fileId=" + fileId + "&token=" + token;
     }
 
     @Override
     public String getFileUnAuthUrl(String fileId) {
-        // 获取context-path
-        //String contextPath = HttpServletUtil.getRequest().getContextPath();
         return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PUBLIC_PREVIEW_URL + "?fileId=" + fileId;
     }
 

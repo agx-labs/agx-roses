@@ -37,7 +37,6 @@ import cn.stylefeng.roses.kernel.file.api.exception.enums.FileExceptionEnum;
 import cn.stylefeng.roses.kernel.file.api.expander.FileConfigExpander;
 import cn.stylefeng.roses.kernel.file.api.pojo.props.MinIoProperties;
 import cn.stylefeng.roses.kernel.file.minio.factory.MinIoConfigFactory;
-import cn.stylefeng.roses.kernel.rule.util.HttpServletUtil;
 import io.minio.*;
 import lombok.extern.slf4j.Slf4j;
 
@@ -248,11 +247,7 @@ public class MinIoFileOperator implements FileOperatorApi {
         // 获取登录用户的token
         String token = LoginContext.me().getToken();
 
-        // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-
         return FileConfigExpander.getServerDeployHost()
-                + contextPath
                 + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME
                 + "?fileBucket=" + bucketName
                 + "&fileObjectName=" + key
@@ -261,11 +256,7 @@ public class MinIoFileOperator implements FileOperatorApi {
 
     @Override
     public String getFileUnAuthUrl(String bucketName, String key) {
-        // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-
         return FileConfigExpander.getServerDeployHost()
-                + contextPath
                 + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME
                 + "?fileBucket=" + bucketName
                 + "&fileObjectName=" + key;

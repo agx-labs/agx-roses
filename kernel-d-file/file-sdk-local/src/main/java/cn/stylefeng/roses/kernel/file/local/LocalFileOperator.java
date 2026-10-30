@@ -35,7 +35,6 @@ import cn.stylefeng.roses.kernel.file.api.enums.FileLocationEnum;
 import cn.stylefeng.roses.kernel.file.api.exception.FileException;
 import cn.stylefeng.roses.kernel.file.api.exception.enums.FileExceptionEnum;
 import cn.stylefeng.roses.kernel.file.api.expander.FileConfigExpander;
-import cn.stylefeng.roses.kernel.rule.util.HttpServletUtil;
 
 import java.io.File;
 import java.io.InputStream;
@@ -153,18 +152,12 @@ public class LocalFileOperator implements FileOperatorApi {
         // 获取登录用户的token
         String token = LoginContext.me().getToken();
 
-        // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-
-        return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME + "?fileBucket=" + bucketName + "&fileObjectName=" + key + "&token=" + token;
+        return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME + "?fileBucket=" + bucketName + "&fileObjectName=" + key + "&token=" + token;
     }
 
     @Override
     public String getFileUnAuthUrl(String bucketName, String key) {
-        // 获取context-path
-        String contextPath = HttpServletUtil.getRequest().getContextPath();
-
-        return FileConfigExpander.getServerDeployHost() + contextPath + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME + "?fileBucket=" + bucketName + "&fileObjectName=" + key;
+        return FileConfigExpander.getServerDeployHost() + FileConstants.FILE_PREVIEW_BY_OBJECT_NAME + "?fileBucket=" + bucketName + "&fileObjectName=" + key;
     }
 
     @Override
